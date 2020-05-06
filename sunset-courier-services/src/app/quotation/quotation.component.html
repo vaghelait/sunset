@@ -1,1 +1,24 @@
-<p>quotation works!</p>
+<mat-card>
+    <form [formGroup]="quoteForm" >
+        <mat-form-field class="full-width">
+            <mat-label>Name</mat-label>
+            <input matNativeControl formControlName="name">
+        </mat-form-field>
+        <mat-form-field class="full-width">
+            <mat-label>Contact</mat-label>
+            <input matNativeControl formControlName="contact">
+        </mat-form-field>
+        <mat-form-field class="full-width">
+            <mat-label>Email</mat-label>
+            <input matNativeControl formControlName="email" placeholder="e.g. email@example.com">
+        </mat-form-field>
+        <mat-form-field class="full-width">
+            <mat-label>Enquiry</mat-label>
+            <textarea matNativeControl placeholder="Please provide any additional information" rows="3"></textarea>
+        </mat-form-field>
+
+        <button mat-flat-button type="submit"> Get a quote </button>
+    </form>
+</mat-card>
+
+

@@ -1,0 +1,20 @@
+label {
+    color: #222222;
+}
+
+.full-width {
+    width: 100%;
+}
+
+button {
+    background-color: #f04b23;
+    text-align: center;
+    width:250px;
+    margin: 15px auto;
+    color: #ffffff;
+    display: block;
+}
+
+form {
+    padding: 15px;
+}

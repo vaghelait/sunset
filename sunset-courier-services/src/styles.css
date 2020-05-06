@@ -1,4 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; color: #424242; }
+section { padding: 30px 60px; background-color: #ffffff;}
+section:nth-of-type(even) {
+    background-color: #eeeeee;
+}
+
+h1 {
+    font-family: "Helvetica Neue";
+    text-align: center;
+    color: #333333
+}
+
+button {
+    border-radius: 2px!important;
+    min-width:100px;
+}

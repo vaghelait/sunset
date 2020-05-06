@@ -1,0 +1,19 @@
+
+<div class="logo"></div>
+<div class="menu">
+  <button mat-flat-button [matMenuTriggerFor]="quote">Get a Quote</button>
+  <mat-menu #quote="matMenu">
+    <button mat-menu-item>Item 1</button>
+    <button mat-menu-item>Item 2</button>
+  </mat-menu>
+  <button mat-flat-button [matMenuTriggerFor]="services">Services</button>
+  <mat-menu #services="matMenu">
+    <button mat-menu-item>Item 1</button>
+    <button mat-menu-item>Item 2</button>
+  </mat-menu>
+  <button mat-flat-button [matMenuTriggerFor]="contact">Contact</button>
+  <mat-menu #contact="matMenu">
+    <button mat-menu-item>Item 1</button>
+    <button mat-menu-item>Item 2</button>
+  </mat-menu>
+</div>

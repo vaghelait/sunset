@@ -1,0 +1,35 @@
+button {
+    border-radius: 0px!important;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+button:hover, .text-color {
+    color: #f04b23;
+}
+
+.menu {
+    padding: 35px 50px 35px 20px;
+    text-align: right;
+    float: right;
+    clear: both;
+}
+
+.logo {
+    background: url("../images/logo.png") no-repeat left;
+    background-size: contain;
+    left: 50px;
+    position: absolute;
+    display: inline-block;
+    height: 105px;
+    top: 0;
+    width:100px;
+}
+
+img {
+    left: 50px;
+    position: absolute;
+    display: inline-block;
+    height: 105px;
+    top: 0;
+}
