@@ -19,6 +19,7 @@ import { QuotationComponent } from './quotation/quotation.component';
 import { ServicesComponent } from './services/services.component';
 import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { FooterComponent } from './footer/footer.component';
     QuotationComponent,
     ServicesComponent,
     MenuComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
