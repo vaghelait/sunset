@@ -1,7 +1,7 @@
 .services{
     margin-left:calc(1.2rem + 8.33%);
     margin-right:8.33%;
-    padding:6rem 0 5rem;
+padding:10rem 0 5rem;
 }
 
 .container {
@@ -26,8 +26,12 @@ mat-card-content {
 }
 
 mat-card p {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
+}
+
+p {
+    font-size: 16px;
 }
 
 ul {

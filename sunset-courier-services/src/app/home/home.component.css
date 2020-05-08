@@ -1,3 +1,14 @@
+.header-image {
+    background: url("../images/parcel-delivery.jpg") no-repeat bottom transparent;
+    background-size: contain;
+    width: 100%!important;
+    height: 5px;
+    min-height:175px;
+    margin-left: 0!important;
+ 
+
+}
+
 img{
     display: inline-block;
 }
@@ -10,9 +21,9 @@ button {
      color: #ffffff;
 }
 
-a.more {
+a.button {
     margin:20px auto;
-    display: flex;
+    display: block;
     text-align: center;
     background-color: #f04b23;
     color: #ffffff;
@@ -23,11 +34,11 @@ a.more {
 }
 
 div:nth-of-type(even) {
-    background-color: #eeeeee;
+    background-color: #dddddd;
 }
 
 .quotes, .services, .sales, .contact {
-    padding:8rem 0 5rem;
+    padding:10rem 0 5rem;
     display:-webkit-box;
     display:-webkit-flex;
     display:-ms-flexbox;
@@ -95,6 +106,10 @@ div:nth-of-type(even) {
 
 ul {
     list-style-type: none;
+    padding: 0 20%;
+   margin: 0 auto;
+   display:block;
+
 }
 
 ul li i {

@@ -18,3 +18,9 @@ button {
 form {
     padding: 15px;
 }
+
+.quotes {
+        margin-left:calc(1.2rem + 8.33%);
+        margin-right:8.33%;
+        padding:10rem 0 5rem;
+}

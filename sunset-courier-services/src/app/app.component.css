@@ -1,25 +1,38 @@
 .header-image {
-    background-color: #f6f6f6;
+
     margin: 0 auto;
-    height: 250px;
+    height: 400px;
     text-align: center;
     clear: both;
     top:150px;
     display: block;
     background: url("images/parcel-delivery.jpg") no-repeat bottom;
     background-size: cover;
-    width: 90%;
+    width: 100%;
+}
+
+.header-image p {
+    right: 100px;
+    top:250px;
+    padding: 10px;
+    font-size: 36px;
+    letter-spacing: 1px;
+    position: absolute;
+    font-weight: 300;
 }
 
 header {  
-    /* height: 400px; */
     text-align: center;
     clear: both;
     display: block;
-    /* background: url("images/parcel-delivery.jpg") no-repeat top; */
-    /* opacity: 0.8; */
-    /* background-size: cover; */
     width: 100%;
+    /* position: fixed; */
+    transition: background-color .5s ease;
+    z-index: 1000;
+    background-color: #ffffff;
+    /* margin-left:calc(1.2rem + 15.33%);
+    margin-right:15.33%;
+    padding:10rem 0 5rem; */
 }
 
 img{
@@ -47,7 +60,7 @@ a {
 }
 
 div:nth-of-type(even) {
-    background-color: #eeeeee;
+    background-color: #dddddd;
 }
 
 .quotes, .services, .sales, .contact {
@@ -129,4 +142,10 @@ ul li i {
 
 ul li {
     padding: 5px 10px 15px;
+}
+
+mat-toolbar {
+    position: fixed;
+    padding: 0px;
+    height: auto;
 }

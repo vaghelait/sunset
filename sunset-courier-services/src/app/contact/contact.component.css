@@ -1,7 +1,7 @@
-.contact, .services{
+.contact{
     margin-left:calc(1.2rem + 8.33%);
     margin-right:8.33%;
-    padding:6rem 0 5rem;
+    padding:10rem 0 5rem;
 }
 
 .container {
@@ -19,14 +19,24 @@ mat-card-title {
     font-size: 18px;
     font-weight: 500;
     color: #222222;
+    font-weight: 200;
+    text-align: center!important;
+    padding:15px;
 }
+
+
+.mat-card-header-text{
+    margin:0 auto!important;
+} 
+
 
 mat-card-content {
     padding: 0 15px;
+    text-align: center;
 }
 
 mat-card p {
-    font-size: 14px;
+    font-size: 24px;
     font-weight: 500;
 }
 
@@ -52,5 +62,6 @@ a {
  i {
     color: #666666;
     padding-right: 10px;
-    font-size: 14px;
+    font-size: 26px;
+    vertical-align: middle;
 }

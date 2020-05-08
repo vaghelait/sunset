@@ -18,10 +18,39 @@ export class QuotationComponent implements OnInit {
 
   form(){
     this.quoteForm = this.formBuilder.group({
-      'name': [''],
-      'email': ['', [Validators.required,  Validators.email]],
-      'contact':['']
+      name: ['', [Validators.required]],
+      email: ['', [Validators.required,  Validators.email]],
+      contact:[''],
+      enquiry:['', [Validators.required]]
     });
+  }
+
+  get name() {
+    return this.quoteForm.get('name');
+  }
+
+  get email() {
+    return this.quoteForm.get('email');
+  }
+  get enquiry() {
+    return this.quoteForm.get('enquiry');
+  }
+  get contact() {
+    return this.quoteForm.get('contact');
+  }
+
+  onSubmit(): void {
+    console.log(this.quoteForm.value);  
+  }
+
+  setValue() {
+    this.quoteForm.setValue(
+      {
+        name: this.name.value,
+        email: this.email.value,
+        contact: this.contact.value,
+        enquiry: this.enquiry.value
+      });
   }
 
 }

@@ -1,24 +1,30 @@
+<div class="quotes"><h1>Get a quote</h1>
+<p>Fill in the form below and get a free no obligation quote today.</p>
 <mat-card>
-    <form [formGroup]="quoteForm" >
+    <form [formGroup]="quoteForm" (ngSubmit)="onSubmit()">
         <mat-form-field class="full-width">
             <mat-label>Name</mat-label>
             <input matNativeControl formControlName="name">
         </mat-form-field>
+        <div class="mat-error" *ngIf="name.touched && name.invalid">Please enter a valid email address. </div>       
         <mat-form-field class="full-width">
-            <mat-label>Contact</mat-label>
+            <mat-label>Contact number</mat-label>
             <input matNativeControl formControlName="contact">
         </mat-form-field>
         <mat-form-field class="full-width">
             <mat-label>Email</mat-label>
             <input matNativeControl formControlName="email" placeholder="e.g. email@example.com">
         </mat-form-field>
+        <div class="mat-error" *ngIf="email.touched && email.invalid">Please enter a valid email address. </div>       
         <mat-form-field class="full-width">
             <mat-label>Enquiry</mat-label>
-            <textarea matNativeControl placeholder="Please provide any additional information" rows="3"></textarea>
+            <textarea matNativeControl formControlName="enquiry" placeholder="Please provide any additional information" rows="3"></textarea>
         </mat-form-field>
+        <div class="mat-error" *ngIf="enquiry.touched && enquiry.invalid">Please enter a valid email address. </div>       
+
 
         <button mat-flat-button type="submit"> Get a quote </button>
     </form>
 </mat-card>
 
-
+</div>

@@ -4,16 +4,23 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; color: #424242; }
 section { padding: 30px 60px; background-color: #ffffff;}
 section:nth-of-type(even) {
-    background-color: #eeeeee;
+    background-color: #dddddd;
 }
 
+
 h1 {
-    font-family: "Helvetica Neue";
     text-align: center;
-    color: #333333
+    color: #333333;
+    font-weight: 300!important;
+    font-size: 32px!important;
+    padding-bottom: 20px!important;
 }
 
 button {
     border-radius: 2px!important;
     min-width:100px;
 }
+
+.mat-card-header-text{
+    margin:0;
+} 

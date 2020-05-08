@@ -18,4 +18,8 @@ constructor(private router: Router){}
     return this.router.navigateByUrl("/services");
   }
 
+  goToQuotes(){
+    return this.router.navigateByUrl("/quotation");
+  }
+
 }

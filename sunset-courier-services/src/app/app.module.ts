@@ -11,9 +11,10 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { FormsModule }   from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { ContactComponent } from './contact/contact.component';
 import { QuotationComponent } from './quotation/quotation.component';
 import { ServicesComponent } from './services/services.component';
@@ -44,7 +45,9 @@ import { HomeComponent } from './home/home.component';
     FormsModule,
     ReactiveFormsModule,
     MatInputModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    FlexLayoutModule,
+    MatSidenavModule  
   ],
   providers: [],
   bootstrap: [AppComponent]
