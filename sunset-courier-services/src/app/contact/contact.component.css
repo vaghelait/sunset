@@ -27,12 +27,13 @@ mat-card-title {
 
 .mat-card-header-text{
     margin:0 auto!important;
+    padding: 0;
 } 
 
 
 mat-card-content {
     padding: 0 15px;
-    text-align: center;
+    /* text-align: center; */
 }
 
 mat-card p {

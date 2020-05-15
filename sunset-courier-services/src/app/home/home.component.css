@@ -33,8 +33,15 @@ a.button {
     font-size: 14px;
 }
 
-div:nth-of-type(even) {
+div:nth-of-type(odd) {
     background-color: #dddddd;
+}
+.carousel {
+    padding:106px 0 0rem;
+    -webkit-flex-wrap:wrap;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+    margin-left:-1.2rem;
 }
 
 .quotes, .services, .sales, .contact {
@@ -49,12 +56,12 @@ div:nth-of-type(even) {
     margin-left:-1.2rem;
 }
 
-.quotes h1 {
+/* .quotes h1 { */
     /* margin-left:calc(1.2rem + 8.33%); */
-    margin-right:8.33%;
+    /* margin-right:8.33%;
     width: 100%;
     margin-bottom: 30px;
-}
+} */
 
  .sales > div {
     -webkit-flex-basis:calc(-1.2rem + 33.33%);
@@ -62,16 +69,17 @@ div:nth-of-type(even) {
     flex-basis:calc(-1.2rem + 33.33%);
     max-width:calc(-1.2rem + 33.33%);
     margin-left:1.2rem;
+    background-color: transparent!important;
 
 }
 
- .services > div, .sales > div.item, .contact > div
+ .services > div, .sales > div.item, .contact > div, .quotes > div
 {
     margin-left:calc(1.2rem + 8.33%);
     margin-right:8.33%;
     margin-bottom: 20px;
     clear: both;
-    background-color: transparent!important
+    background-color: transparent!important;
 }
 
 .sales i {
@@ -94,15 +102,15 @@ div:nth-of-type(even) {
 .item-heading {
     display:-webkit-box;
     display:-webkit-flex;
-    display:-webkit-flex;
-    display:-webkit-flex;
+    background-color: transparent!important;
+
 }
 
-.quotes div {
+/* .quotes div {
     margin-left: 8.33%;
     width: 40%;
     
-}
+} */
 
 ul {
     list-style-type: none;

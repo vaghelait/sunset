@@ -15,12 +15,15 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatCarouselModule } from '@ngmodule/material-carousel';
 import { ContactComponent } from './contact/contact.component';
 import { QuotationComponent } from './quotation/quotation.component';
 import { ServicesComponent } from './services/services.component';
 import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
+import { ImageCarouselComponent } from './image-carousel/image-carousel.component';
+
 
 
 @NgModule({
@@ -31,7 +34,8 @@ import { HomeComponent } from './home/home.component';
     ServicesComponent,
     MenuComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    ImageCarouselComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +51,8 @@ import { HomeComponent } from './home/home.component';
     MatInputModule,
     MatFormFieldModule,
     FlexLayoutModule,
-    MatSidenavModule  
+    MatSidenavModule,
+    MatCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
