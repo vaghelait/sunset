@@ -13,8 +13,8 @@ export class ImageCarouselComponent implements OnInit {
   }
 
   public images = [
-    './app/images/51090470-young-delivery-men-loading-cardboard-boxes-in-truck.jpg',
-    '../98924574-packages-with-supplies.jpg',
+    '../51090470.jpg',
+    '../logo.png',
     '../stock-photo-courier-is-loading-the-van-with-parcels-661996507.jpg',
     '../parcel-delivery.jpg',
   ];
