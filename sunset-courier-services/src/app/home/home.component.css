@@ -47,7 +47,7 @@ div:nth-of-type(odd) {
 .services,
 .sales,
 .contact {
-  padding: 10rem 0 5rem;
+  padding: 10rem 0 0rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

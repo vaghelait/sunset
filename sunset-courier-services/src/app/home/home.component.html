@@ -62,13 +62,41 @@
 </div>
 <div class="sales">
   <div class="item">
-    <div class="item-heading">
-      <i class="fas fa-map-marked-alt"></i>
-      <p>Nationwide deliveries and collection</p>
-    </div>
-    <p>We collect and deliver all across the UK.</p>
+    <mat-card class="example-card">
+      <img mat-card-image src="../../assets/images/home/map.jpg" />
+      <mat-card-content>
+        <p>Nationwide deliveries and collection</p>
+      </mat-card-content>
+    </mat-card>
   </div>
   <div class="item">
+    <mat-card class="example-card">
+      <img mat-card-image src="../../assets/images/home/quote.jpg" />
+      <mat-card-content>
+        <p>Free no obligation quotes</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div class="item">
+    <mat-card class="example-card">
+      <img mat-card-image src="../../assets/images/home/24.jpg" />
+      <mat-card-content>
+        <p>Open 24 hours a day, 7 days a week.</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div class="item">
+    <mat-card class="example-card">
+      <img mat-card-image src="../../assets/images/home/van.jpg" />
+      <mat-card-content>
+        <p>
+          Quality vehicles from Small Vans to XLWB Vans and all goods are fully
+          insured
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <!-- <div class="item">
     <div class="item-heading">
       <i class="fas fa-file-alt"></i>
       <p>Free no obligation quotes</p>
@@ -88,17 +116,20 @@
       <p>Quality vehicles</p>
     </div>
     <p>Small Vans to XLWB Vans, all goods are fully insured</p>
+  </div>-->
+  <div id="contact">
+    <app-contact></app-contact>
   </div>
-</div>
-<div id="contact">
-  <app-contact></app-contact>
-</div>
 
-<style>
-  h1 {
-    font-family: Pacifico;
-  }
-  p {
-    font-family: Roboto;
-  }
-</style>
+  <style>
+    h1 {
+      font-family: Pacifico;
+    }
+    p {
+      font-family: Roboto;
+    }
+    .mat-card-content {
+      margin: 0 auto;
+    }
+  </style>
+</div>
