@@ -13,10 +13,10 @@ export class ImageCarouselComponent implements OnInit {
   }
 
   public images = [
-    '../51090470.jpg',
-    '../logo.png',
-    '../stock-photo-courier-is-loading-the-van-with-parcels-661996507.jpg',
-    '../parcel-delivery.jpg',
+    '../assets/images/carousel/51090470.jpg',
+    '../assets/images/carousel/98924574.jpg',
+    '../assets/images/carousel/661996507.jpg',
+    '../assets/images/carousel/parcel-delivery.jpg',
   ];
 
   public slides: any = this.images;

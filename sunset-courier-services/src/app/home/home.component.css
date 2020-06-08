@@ -1,5 +1,6 @@
 .header-image {
-  background: url("../images/parcel-delivery.jpg") no-repeat bottom transparent;
+  background: url("../assets/images/carousel/parcel-delivery.jpg") no-repeat
+    bottom transparent;
   background-size: contain;
   width: 100% !important;
   height: 5px;
