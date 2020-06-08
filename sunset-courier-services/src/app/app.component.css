@@ -29,7 +29,7 @@ header {
     /* position: fixed; */
     transition: background-color .5s ease;
     z-index: 1000;
-    background-color: #ffffff;
+    background-color: #000000;
     /* margin-left:calc(1.2rem + 15.33%);
     margin-right:15.33%;
     padding:10rem 0 5rem; */

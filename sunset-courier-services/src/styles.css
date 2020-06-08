@@ -36,3 +36,7 @@ button {
 mat-toolbar {
     z-index: 3;
 }
+
+app-contact > .contact {
+    padding:10rem 0 5rem!important;
+}
