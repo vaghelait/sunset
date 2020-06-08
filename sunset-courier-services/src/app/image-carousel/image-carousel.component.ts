@@ -8,9 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ImageCarouselComponent implements OnInit {
   constructor() {}
 
-  ngOnInit(): void {
-    console.log(this.slides);
-  }
+  ngOnInit(): void {}
 
   public images = [
     '../assets/images/carousel/51090470.jpg',
