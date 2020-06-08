@@ -5,7 +5,7 @@
   clear: both;
   top: 150px;
   display: block;
-  background: url("../assets/images/carousel/parcel-delivery.jpg") no-repeat
+  background: url("/assets/images/carousel/parcel-delivery.jpg") no-repeat
     bottom;
   background-size: cover;
   width: 100%;
