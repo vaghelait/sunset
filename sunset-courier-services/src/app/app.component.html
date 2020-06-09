@@ -7,25 +7,25 @@
 <router-outlet>
 </router-outlet>
 <app-footer></app-footer> -->
-<mat-sidenav-container fullscreen>
+<!-- <app-layout> -->
+<mat-sidenav-container>
+  <mat-sidenav #sidenav role="navigation">
+    <app-mobile-menu (sidenavClose)="sidenav.close()"></app-mobile-menu>
+  </mat-sidenav>
+  <mat-sidenav-content>
 
-        <mat-sidenav-content fxLayout="column">
-      
-          <mat-toolbar>
-            <header><app-menu></app-menu></header>
-            
-          </mat-toolbar>
-      
-          <router-outlet>
-            <!-- content change by changing the route -->
-          </router-outlet>
-      
-          <footer fxFlexOffset="auto">
-      
-           <app-footer></app-footer>
-      
-          </footer>
-      
-        </mat-sidenav-content>
-      
-      </mat-sidenav-container>
+    <!-- <mat-toolbar> -->
+      <!-- <header> -->
+        <app-menu (sidenavToggle)="sidenav.toggle()"></app-menu>
+      <!-- </header> -->
+    <!-- </mat-toolbar>   -->
+  
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+    <!-- <footer fxFlexOffset="auto">
+      <app-footer></app-footer>
+    </footer> -->
+  </mat-sidenav-content>
+</mat-sidenav-container>
+<!-- </app-layout> -->

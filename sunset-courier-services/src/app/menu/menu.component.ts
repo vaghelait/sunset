@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,11 +8,17 @@ import { Router } from '@angular/router';
 })
 export class MenuComponent implements OnInit {
 
-  constructor(private router: Router) { }
-
-  ngOnInit(): void {
+  @Output() public sidenavToggle = new EventEmitter();
+ 
+ 
+  ngOnInit() {
   }
-
+ 
+  public onToggleSidenav = () => {
+    this.sidenavToggle.emit();
+  }
+  constructor(private router: Router) { }
+  
   goToQuote(){
     return this.router.navigateByUrl('quotation');
   }

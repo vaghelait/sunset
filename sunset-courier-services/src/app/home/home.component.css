@@ -12,6 +12,17 @@ img {
   display: inline-block;
 }
 
+.quote-button {
+  width:95%; 
+  position:fixed; 
+  bottom: 2%; 
+  background-color: #f04b23;
+  text-align: center;
+  margin: 0 5px;
+  display: block;
+
+}
+
 button {
   margin: 20px auto;
   display: flex;
@@ -36,7 +47,7 @@ div:nth-of-type(odd) {
   background-color: #dddddd;
 }
 .carousel {
-  padding: 106px 0 0rem;
+  padding: 0rem;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -47,7 +58,7 @@ div:nth-of-type(odd) {
 .services,
 .sales,
 .contact {
-  padding: 10rem 0 5rem;
+  padding: 6rem 0 5rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

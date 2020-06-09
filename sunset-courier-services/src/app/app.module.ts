@@ -9,6 +9,7 @@ import { MatButtonModule} from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
 import { FormsModule }   from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -23,6 +24,7 @@ import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { ImageCarouselComponent } from './image-carousel/image-carousel.component';
+import { MobileMenuComponent } from './mobile-menu/mobile-menu.component';
 
 
 
@@ -35,7 +37,8 @@ import { ImageCarouselComponent } from './image-carousel/image-carousel.componen
     MenuComponent,
     FooterComponent,
     HomeComponent,
-    ImageCarouselComponent
+    ImageCarouselComponent,
+    MobileMenuComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +55,8 @@ import { ImageCarouselComponent } from './image-carousel/image-carousel.componen
     MatFormFieldModule,
     FlexLayoutModule,
     MatSidenavModule,
-    MatCarouselModule
+    MatCarouselModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
