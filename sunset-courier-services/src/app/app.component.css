@@ -163,3 +163,14 @@ mat-sidenav {
 main {
     padding: 0;
 }
+
+.quote-button {
+  width:95%; 
+  position:fixed; 
+  bottom: 2%; 
+  background-color: #f04b23;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+
+}
