@@ -31,13 +31,13 @@
   <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
       <ul fxLayout fxLayoutGap="30px" class="navigation-items">
         <li>
-          <a routerLink="/quotation">Get a Quote</a>
+          <button [ngxScrollTo]="'#quotes'">Get a Quote</button>
         </li>
           <li>
-              <a [ngxScrollTo]="'#serviceInfo'">Services</a>
+              <button [ngxScrollTo]="'#serviceInfo'">Services</button>
           </li>
           <li>
-              <a style="margin-right: 30px;" routerLink="/contact">Contact</a>
+              <button style="margin-right: 30px;"  [ngxScrollTo]="'#contact'">Contact</button>
           </li>
       </ul>
   </div>

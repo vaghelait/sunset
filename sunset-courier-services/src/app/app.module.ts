@@ -27,9 +27,6 @@ import { HomeComponent } from './home/home.component';
 import { ImageCarouselComponent } from './image-carousel/image-carousel.component';
 import { MobileMenuComponent } from './mobile-menu/mobile-menu.component';
 
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -59,7 +56,7 @@ import { MobileMenuComponent } from './mobile-menu/mobile-menu.component';
     MatSidenavModule,
     MatCarouselModule,
     MatListModule,
-    ScrollToModule
+    ScrollToModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
