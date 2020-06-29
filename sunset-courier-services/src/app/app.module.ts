@@ -17,6 +17,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatCarouselModule } from '@ngmodule/material-carousel';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { ContactComponent } from './contact/contact.component';
 import { QuotationComponent } from './quotation/quotation.component';
 import { ServicesComponent } from './services/services.component';
@@ -25,6 +26,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { ImageCarouselComponent } from './image-carousel/image-carousel.component';
 import { MobileMenuComponent } from './mobile-menu/mobile-menu.component';
+
 
 
 
@@ -56,7 +58,8 @@ import { MobileMenuComponent } from './mobile-menu/mobile-menu.component';
     FlexLayoutModule,
     MatSidenavModule,
     MatCarouselModule,
-    MatListModule
+    MatListModule,
+    ScrollToModule
   ],
   providers: [],
   bootstrap: [AppComponent]
