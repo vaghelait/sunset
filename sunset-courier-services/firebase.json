@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/sunset-courier-services",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
