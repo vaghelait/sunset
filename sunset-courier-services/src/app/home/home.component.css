@@ -240,4 +240,24 @@ ul li {
   .container {
     flex-direction: column;
   }
+
+  .container .mat-card {
+    width: auto;
+    margin: 10px 0!important;
+  }
+  
+  
+  .quote-container {
+    flex-direction: column;
+  }
+
+  .quote-container div {
+    width: 100%;
+  }
+
+  .quote-container div:nth-of-type(2) {
+    margin-top: 50px;
+  }
+
 }
+

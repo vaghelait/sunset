@@ -66,3 +66,16 @@ a {
     font-size: 26px;
     vertical-align: middle;
 }
+
+@media(max-width: 959px)
+{
+  .container {
+    flex-direction: column;
+  }
+
+  .container .mat-card {
+    width: auto;
+    margin: 10px 0!important;
+  }
+  
+}

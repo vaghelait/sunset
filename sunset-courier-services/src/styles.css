@@ -55,5 +55,5 @@ mat-toolbar {
 }
 
 app-contact > .contact {
-  padding: 10rem 0 5rem !important;
+  padding: 0rem 0 5rem !important;
 }
