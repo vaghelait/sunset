@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import url("https://fonts.googleapis.com/css?family=Pacifico");
+@import url("https://fonts.googleapis.com/css?family=Cinzel");
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 
 html,
@@ -12,10 +12,12 @@ body {
   margin: 0;
   color: #424242;
 }
+
 section {
   padding: 30px 60px;
   background-color: #ffffff;
 }
+
 section:nth-of-type(even) {
   background-color: #dddddd;
 }
@@ -23,7 +25,7 @@ section:nth-of-type(even) {
 h1 {
   text-align: center;
   color: #333333;
-  font-weight: 300 !important;
+  font-weight: 500 !important;
   font-size: 32px !important;
   padding-bottom: 20px !important;
 }
@@ -42,6 +44,7 @@ button {
 .mat-stroked-button.mat-accent {
   color: #ffffff !important;
 }
+
 .mat-flat-button.mat-accent,
 .mat-raised-button.mat-accent,
 .mat-fab.mat-accent,
@@ -54,6 +57,6 @@ mat-toolbar {
   z-index: 3;
 }
 
-app-contact > .contact {
+app-contact>.contact {
   padding: 0rem 0 5rem !important;
 }
