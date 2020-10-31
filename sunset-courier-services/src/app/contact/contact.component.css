@@ -1,9 +1,12 @@
 .contact{
-    margin-left:calc(1.2rem + 8.33%);
-    margin-right:8.33%;
-    padding:15rem 0 5rem;
+    /* margin-left:calc(1.2rem + 8.33%);
+    margin-right:8.33%; */
+    padding:0rem 0 5rem;
 }
 
+h1 {
+    padding-top: 4rem;
+}
 .container {
     display:flex;
     flex-direction: row;
@@ -41,6 +44,14 @@ mat-card p {
     font-weight: 500;
 }
 
+
+ .container div {
+    flex-grow: 1;
+    text-align: center;
+    background-color: transparent;
+    justify-content: center;
+}
+
 ul {
     list-style-type: none;
     padding-left: 5px;
@@ -63,8 +74,13 @@ a {
  i {
     color: #666666;
     padding-right: 10px;
-    font-size: 26px;
-    vertical-align: middle;
+    font-size: 40px;
+    padding: 20px;
+    display: block;
+}
+
+.wa {
+   color: #25D366;
 }
 
 @media(max-width: 959px)
@@ -77,5 +93,32 @@ a {
     width: auto;
     margin: 10px 0!important;
   }
+
+  i {
+    color: #666666;
+    padding-right: 10px;
+    font-size: 32px;
+    padding: 10px;
+    display: block;
+}
+
+
+.container div {
+   
+    text-align: center;
+    background-color: transparent;
+    padding-bottom: 15px;
+    justify-content: center;
+}
+
+h1 {
+    padding-top: 4rem;
+}
+
+.contact{
+    /* margin-left:calc(1.2rem + 8.33%);
+    margin-right:8.33%; */
+    padding:0rem 0 3rem;
+}
   
 }

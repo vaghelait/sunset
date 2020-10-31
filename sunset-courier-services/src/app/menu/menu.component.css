@@ -80,6 +80,23 @@ mat-icon {
   }
 
   img {
-    height: 80px;
+    height: 70px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .logoImage {
+    width: 140px;
+    display: block;
+    margin: 0 auto;    
+  }
+
+  .logoImage a {
+    display: block;
+    margin: 0 auto;
+  }
+
+  mat-toolbar {
+    min-height: 100px;
   }
 }

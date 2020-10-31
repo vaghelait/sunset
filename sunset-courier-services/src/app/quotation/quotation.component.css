@@ -26,3 +26,12 @@ form {
 }
 
 
+
+
+@media(max-width: 959px){
+    .quotes {
+        margin-left:0px;
+        margin-right:0px;
+        padding:0px;
+    }
+}

@@ -6,7 +6,7 @@
             <mat-label>Name</mat-label>
             <input matNativeControl formControlName="name">
         </mat-form-field>
-        <div class="mat-error" *ngIf="name.touched && name.invalid">Please enter a valid email address. </div>       
+        <div class="mat-error" *ngIf="name.touched && name.invalid">Please enter a name</div>       
         <mat-form-field class="full-width">
             <mat-label>Contact number</mat-label>
             <input matNativeControl formControlName="contact">
@@ -15,7 +15,7 @@
             <mat-label>Email</mat-label>
             <input matNativeControl formControlName="email" placeholder="e.g. email@example.com">
         </mat-form-field>
-        <div class="mat-error" *ngIf="email.touched && email.invalid">Please enter a valid email address. </div>       
+        <div class="mat-error" *ngIf="email.touched && email.invalid">Please enter a valid email address</div>       
         <mat-form-field class="full-width">
             <mat-label>Enquiry</mat-label>
             <textarea matNativeControl formControlName="enquiry" placeholder="Please provide any additional information" rows="3"></textarea>

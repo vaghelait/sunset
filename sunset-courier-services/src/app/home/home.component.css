@@ -58,7 +58,7 @@ div:nth-of-type(odd) {
 .services,
 .sales,
 .contact {
-  padding: 6rem 0 5rem;
+  padding: 4rem 0 5rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -258,6 +258,19 @@ ul li {
   .quote-container div:nth-of-type(2) {
     margin-top: 50px;
   }
+
+  .quote-container, .container
+  {
+    padding-top: 0px;
+  }
+
+.quotes,
+.services,
+.sales,
+.contact {
+  padding: 4rem 0 5rem;
+
+}
 
 }
 
