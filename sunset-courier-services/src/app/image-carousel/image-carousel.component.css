@@ -2,6 +2,11 @@
     color:#ffffff!important;
 }
 
+h1 {
+    font-size: 28px!important;
+    padding: 10px 75px;
+}
+
 
 @media(max-width: 959px)
 {
