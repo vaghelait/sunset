@@ -6,7 +6,17 @@ footer {
     color: #ffffff
 }
 section {
-    width: 50%;
+    width: 100%;
     float: left;
     background-color: transparent!important;
+    text-align: center;
 }
+
+
+@media(max-width: 959px)
+{
+    /* section {
+        text-align: center;
+    } */
+}
+

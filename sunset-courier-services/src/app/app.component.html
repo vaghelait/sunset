@@ -24,9 +24,10 @@
       <router-outlet></router-outlet>
     </main>
     <div fxHide.gt-xs class="mobile-quote">
-      <button mat-button class="quote-button" routerLink="/quotation">Get a Quote</button>
-     
-      </div>
+      <button mat-button class="quote-button" [ngxScrollTo]="'#quotes'">Get a Quote</button>
+    </div>
+   
+ 
  
     <!-- <footer> -->
       <app-footer fxFlexOffset="auto"></app-footer>

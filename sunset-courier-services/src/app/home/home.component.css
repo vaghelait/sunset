@@ -195,8 +195,8 @@ mat-card {
 }
 
 mat-card-title {
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 17px!important;
+  font-weight: 600;
   color: #222222;
 }
 
@@ -226,6 +226,7 @@ ul li i {
   color: #f04b23;
   font-size: 18px;
   margin-right: 10px;
+  vertical-align: middle;
 }
 
 ul li {
@@ -256,7 +257,7 @@ ul li {
   }
 
   .quote-container div:nth-of-type(2) {
-    margin-top: 50px;
+    margin-top: 10px;
   }
 
   .quote-container, .container
@@ -271,6 +272,17 @@ ul li {
   padding: 4rem 0 5rem;
 
 }
+
+mat-card-title {
+  font-weight: 600;
+  font-size: 15px!important;
+}
+
+mat-card-content, .mat-card-header {
+ padding:0!important;
+}
+
+
 
 }
 

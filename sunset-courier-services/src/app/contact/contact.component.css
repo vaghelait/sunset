@@ -8,9 +8,10 @@ h1 {
     padding-top: 4rem;
 }
 .container {
-    display:flex;
-    flex-direction: row;
-    padding:25px 0; 
+    padding: 0 20%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 
 mat-card {
@@ -46,10 +47,9 @@ mat-card p {
 
 
  .container div {
-    flex-grow: 1;
     text-align: center;
     background-color: transparent;
-    justify-content: center;
+    width:300px;
 }
 
 ul {
@@ -83,10 +83,10 @@ a {
    color: #25D366;
 }
 
-@media(max-width: 959px)
+@media(max-width: 1024px)
 {
   .container {
-    flex-direction: column;
+  padding: 0 5%;
   }
 
   .container .mat-card {
