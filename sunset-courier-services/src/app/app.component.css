@@ -164,17 +164,16 @@ main {
     padding: 0;
 }
 
-.quote-button {
-  width:95%; 
-  position:fixed; 
-  bottom: 2%; 
-  background-color: #f04b23;
-  text-align: center;
+.mobile-quote {
   margin: 0 auto;
   display: block;
-
+  width:100%;
+  bottom:5px;
+  position: -webkit-sticky;
+  position: sticky;
 }
 
-@media only screen and (max-width: 768px) {
-
+.quote-button {
+  background-color: #f04b23;
 }
+
