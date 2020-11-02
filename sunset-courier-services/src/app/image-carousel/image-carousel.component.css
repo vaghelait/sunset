@@ -3,9 +3,12 @@
 }
 
 h1 {
-    font-size: 28px!important;
+    font-size: 22px!important;
     padding: 10px 75px;
 }
+
+
+
 
 
 @media(max-width: 959px)
@@ -14,4 +17,6 @@ h1 {
         font-size: 14px!important;
         padding: 10px 75px;
     }
+
+ 
 }
