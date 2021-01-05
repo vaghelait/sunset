@@ -18,4 +18,24 @@ export class ImageCarouselComponent implements OnInit {
   ];
 
   public slides: any = this.images;
+
+  public heading = [
+    'Test 1',
+    'Test 2',
+    'Test 3',
+    'Test 4',
+  ];
+
+  public headings: any = this.heading;
+
+  getHeading(){
+
+  this.slides.forEach(function (i) {
+    for (let index = 0; index < i.length; index++) {
+      const element = i[index];
+      console.log(element);
+    }
+  });
+  }
+
 }
