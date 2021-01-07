@@ -11,31 +11,11 @@ export class ImageCarouselComponent implements OnInit {
   ngOnInit(): void {}
 
   public images = [
-    '../assets/images/carousel/51090470.jpg',
-    '../assets/images/carousel/98924574.jpg',
-    '../assets/images/carousel/661996507.jpg',
-    '../assets/images/carousel/parcel-delivery.jpg',
+    {id: 1, url: '../assets/images/carousel/51090470.jpg', heading: "Nationwide deliveries and collection | We collect and deliver all across the UK"},
+    {id: 2, url: '../assets/images/carousel/98924574.jpg', heading: "Free no obligation quotes | Get a quote online today"},
+    {id: 3, url: '../assets/images/carousel/661996507.jpg', heading: "We're always open | Open 24 hours a day, 7 days a week"},
+    {id: 4, url: '../assets/images/carousel/parcel-delivery.jpg', heading: "Quality vehicles | Small Vans to XLWB Vans, all goods are fully insured"},
   ];
 
   public slides: any = this.images;
-
-  public heading = [
-    'Test 1',
-    'Test 2',
-    'Test 3',
-    'Test 4',
-  ];
-
-  public headings: any = this.heading;
-
-  getHeading(){
-
-  this.slides.forEach(function (i) {
-    for (let index = 0; index < i.length; index++) {
-      const element = i[index];
-      console.log(element);
-    }
-  });
-  }
-
 }
