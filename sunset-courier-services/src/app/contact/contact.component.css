@@ -49,7 +49,8 @@ mat-card p {
  .container div {
     text-align: center;
     background-color: transparent;
-    width:300px;
+    /* width:300px; */
+    flex: 1 1 18em;
 }
 
 ul {
@@ -79,14 +80,25 @@ a {
     display: block;
 }
 
+i.phone {
+    font-size: 32px;
+}
 .wa {
    color: #25D366;
 }
 
+@media(max-width: 1286px)
+{
+  .container {
+  padding: 0 5%;
+  flex-flow: row;
+  }
+}
 @media(max-width: 1024px)
 {
   .container {
   padding: 0 5%;
+  flex-flow: row;
   }
 
   .container .mat-card {
@@ -121,4 +133,12 @@ h1 {
     padding:0rem 0 3rem;
 }
   
+}
+
+@media(max-width: 570px)
+{
+  .container {
+  flex-flow: row wrap!important;
+  }
+
 }
