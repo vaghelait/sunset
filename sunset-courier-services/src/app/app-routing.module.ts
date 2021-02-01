@@ -4,6 +4,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ServicesComponent } from './services/services.component';
 import { QuotationComponent } from './quotation/quotation.component';
 import { HomeComponent } from './home/home.component';
+import { FaqsComponent } from './faqs/faqs.component';
 
 const routes: Routes = [
 { 
@@ -26,6 +27,10 @@ const routes: Routes = [
 {
   path: 'services',
   component: ServicesComponent
+},
+{
+  path: 'faqs',
+  component: FaqsComponent
 }
 ];
 

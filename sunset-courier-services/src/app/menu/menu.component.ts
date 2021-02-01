@@ -35,6 +35,9 @@ export class MenuComponent implements OnInit {
     return this.router.navigateByUrl('home');
   }
 
+  goToFAQs(){
+    return this.router.navigateByUrl('faqs');
+  }
 
 
 }

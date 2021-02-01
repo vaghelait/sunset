@@ -168,7 +168,8 @@ ul li {
   font-size: 14px;
 }
 
-.quote-container, .container {
+/* .quote-container, */
+.container { 
   display:flex;
   flex-direction: row;
   padding:25px 0; 
@@ -179,15 +180,22 @@ ul li {
 }
 
 .quote-container div {
-  width: 50%;
+  /* width: 50%; */
   background-color: transparent!important;
+}
+
+.quote-container > .quote-button-small {
+  width:30%; 
+  background-color: #f04b23;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
 }
 
 mat-card:last-of-type {
   width:100%;
   margin: 10px 0px 10px 0px;
 }
-
 
 mat-card {
   width: 100%;

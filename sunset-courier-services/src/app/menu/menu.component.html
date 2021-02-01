@@ -1,30 +1,29 @@
 
-<!-- <div class="logo"></div>
-<div class="menu">
+<!-- <div class="logo"></div> -->
+<!-- <div class="menu">
   <button mat-flat-button (click)="goToHome()">Home</button>
-  <button mat-flat-button (click)="goToQuote()">Get a Quote</button> -->
-  <!-- <mat-menu #quote="matMenu">
+  <button mat-flat-button (click)="goToQuote()">Get a Quote</button>
+   <mat-menu #quote="matMenu">
     <button mat-menu-item>Item 1</button>
     <button mat-menu-item>Item 2</button>
-  </mat-menu> -->
-  <!-- <button mat-flat-button (click)="goToServices()">Services</button> -->
-  <!-- <mat-menu #services="matMenu">
+  </mat-menu> 
+  <button mat-flat-button (click)="goToServices()">Services</button>
+  <mat-menu #services="matMenu">
+    <button mat-menu-item>Frequently asked questions</button>
+  </mat-menu>
+ <button mat-flat-button (click)="goToContact()">Contact</button>
+ <mat-menu #contact="matMenu">
     <button mat-menu-item>Item 1</button>
     <button mat-menu-item>Item 2</button>
-  </mat-menu> -->
-  <!-- <button mat-flat-button (click)="goToContact()">Contact</button> -->
-  <!-- <mat-menu #contact="matMenu">
-    <button mat-menu-item>Item 1</button>
-    <button mat-menu-item>Item 2</button>
-  </mat-menu> -->
-<!-- </div> -->
+  </mat-menu>
+</div> -->
 
 <mat-toolbar>
-  <!-- <div fxHide.gt-xs>
+  <div fxHide.gt-xs>
       <button mat-icon-button (click)="onToggleSidenav()">
           <mat-icon>menu</mat-icon>
       </button>
-  </div> -->
+  </div>
   <div class="logoImage">
       <a routerLink="/"><img src="../../assets/images/logo/logo.png"> </a>
   </div>
@@ -33,12 +32,15 @@
         <li>
           <button [ngxScrollTo]="'#quotes'">Get a Quote</button>
         </li>
-          <li>
-              <button [ngxScrollTo]="'#serviceInfo'">Services</button>
-          </li>
-          <li>
-              <button style="margin-right: 30px;"  [ngxScrollTo]="'#contact'">Contact</button>
-          </li>
+        <li>
+           <button [ngxScrollTo]="'#serviceInfo'">Services</button>
+        </li>
+        <li>
+           <button [ngxScrollTo]="'#contact'">Contact</button>
+        </li>
+        <li>
+           <button style="margin-right: 30px;" (click)="goToFAQs()">FAQS</button>
+        </li>
       </ul>
   </div>
 </mat-toolbar>

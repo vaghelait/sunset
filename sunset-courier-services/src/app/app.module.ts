@@ -10,6 +10,8 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { AngularMyDatePickerModule } from 'angular-mydatepicker';
+
 import { FormsModule }   from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -26,6 +28,8 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { ImageCarouselComponent } from './image-carousel/image-carousel.component';
 import { MobileMenuComponent } from './mobile-menu/mobile-menu.component';
+import { FaqsComponent } from './faqs/faqs.component';
+
 
 @NgModule({
   declarations: [
@@ -37,7 +41,8 @@ import { MobileMenuComponent } from './mobile-menu/mobile-menu.component';
     FooterComponent,
     HomeComponent,
     ImageCarouselComponent,
-    MobileMenuComponent
+    MobileMenuComponent,
+    FaqsComponent
   ],
   imports: [
     BrowserModule,
@@ -48,6 +53,7 @@ import { MobileMenuComponent } from './mobile-menu/mobile-menu.component';
     MatToolbarModule,
     MatIconModule,
     MatCardModule,
+    AngularMyDatePickerModule,
     FormsModule,
     ReactiveFormsModule,
     MatInputModule,
