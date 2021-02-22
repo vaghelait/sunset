@@ -8,6 +8,14 @@ button {
   font-size: 14px;
   border: none!important;
   cursor: pointer;
+  font-weight: 100!important;
+  font-family: 'Roboto';
+}
+
+a {
+  font-weight: 100!important;
+  font-family: 'Roboto';
+  text-decoration: none;
 }
 
 button:hover,
@@ -19,6 +27,11 @@ button:active, button:focus {
  border: none!important;
  border: 0!important;
  outline:0;
+}
+
+button.quote-button {
+  background-color: #f04b23!important;
+  padding:8px;
 }
 
 
@@ -44,7 +57,7 @@ img {
   /* left: 0px;
   position: absolute;
   display: inline-block; */
-  height: 90px;
+  height: 75px;
   top: 10px;
 }
 /* 
@@ -66,7 +79,7 @@ a {
 mat-toolbar{
   border-radius: 0px;
   background-color: #000000;
-  min-height: 120px;
+  min-height: 100px;
   padding-right:20px;
 }
 

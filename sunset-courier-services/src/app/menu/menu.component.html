@@ -17,7 +17,18 @@
     <button mat-menu-item>Item 2</button>
   </mat-menu>
 </div> -->
-
+  <div fxLayoutAlign="end" fxHide.xs style="opacity: 0.9; background-color: #111111; padding: 6px 10px;">
+    <ul fxLayout fxLayoutGap="30px" class="navigation-items">
+      <li>
+        <i class="fas fa-phone-alt phone" style="padding:10px 0px 10px 10px; color: #f4f4f4;"></i> <a  href="tel:07458 302808" style="color: #f4f4f4; padding: 10px 3px;"> 
+          07458 302808 
+      </a>
+      </li>
+      <li>
+        <button class="quote-button" [ngxScrollTo]="'#quotes'">Get a Quote</button>
+      </li>
+    </ul>
+</div>
 <mat-toolbar>
   <div fxHide.gt-xs>
       <button mat-icon-button (click)="onToggleSidenav()">
@@ -30,17 +41,24 @@
   <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
       <ul fxLayout fxLayoutGap="30px" class="navigation-items">
         <li>
-          <button [ngxScrollTo]="'#quotes'">Get a Quote</button>
+          <button (click)="goToHome()">Home</button>
+       </li>
+        <li>
+           <!-- <button [ngxScrollTo]="'#serviceInfo'">Services</button> -->
+           <button (click)="goToServices()">Services</button>
         </li>
         <li>
-           <button [ngxScrollTo]="'#serviceInfo'">Services</button>
+           <button (click)="goToFAQs()">FAQS</button>
         </li>
         <li>
-           <button [ngxScrollTo]="'#contact'">Contact</button>
-        </li>
-        <li>
-           <button style="margin-right: 30px;" (click)="goToFAQs()">FAQS</button>
+           <!-- <button [ngxScrollTo]="'#contact'">Contact</button> -->
+           <button (click)="goToContact()" >Contact</button>
         </li>
       </ul>
   </div>
+  <!-- <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
+
+      <button class="quote-button" [ngxScrollTo]="'#quotes'">Get a Quote</button>
+    
+  </div> -->
 </mat-toolbar>
