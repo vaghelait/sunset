@@ -28,7 +28,7 @@
     "@nicky-lenaers/ngx-scroll-to": "^9.0.0",
     "angular-mydatepicker": "^0.10.2",
     "eva-icons": "^1.1.2",
-    "rxjs": "~6.5.4",
+    "rxjs": "~6.6.3",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
   },
