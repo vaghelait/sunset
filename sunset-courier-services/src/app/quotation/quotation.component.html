@@ -1,30 +1,38 @@
-<div class="quotes"><!-- <h1>Get a quote</h1> -->
-<p style="font-size: 16px; font-weight:600">Fill in the form below and get a free no obligation quote today.</p>
-<mat-card>
-    <form [formGroup]="quoteForm" (ngSubmit)="onSubmit()">
-        <mat-form-field class="full-width">
-            <mat-label>Name</mat-label>
-            <input matNativeControl formControlName="name">
-        </mat-form-field>
-        <div class="mat-error" *ngIf="name.touched && name.invalid">Please enter a name</div>       
-        <mat-form-field class="full-width">
-            <mat-label>Contact number</mat-label>
-            <input matNativeControl formControlName="contact">
-        </mat-form-field>
-        <mat-form-field class="full-width">
-            <mat-label>Email</mat-label>
-            <input matNativeControl formControlName="email" placeholder="e.g. email@example.com">
-        </mat-form-field>
-        <div class="mat-error" *ngIf="email.touched && email.invalid">Please enter a valid email address</div>       
-        <mat-form-field class="full-width">
-            <mat-label>Enquiry</mat-label>
-            <textarea matNativeControl formControlName="enquiry" placeholder="Please provide any additional information" rows="3"></textarea>
-        </mat-form-field>
-        <div class="mat-error" *ngIf="enquiry.touched && enquiry.invalid">Please enter a valid email address. </div>       
 
 
-        <button mat-flat-button type="submit"> Get a quote </button>
+<mat-horizontal-stepper labelPosition="bottom" #stepper>
+  <mat-step [stepControl]="firstFormGroup">
+    <form [formGroup]="firstFormGroup">
+      <ng-template matStepLabel>Fill out your name</ng-template>
+      <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperNext>Next</button>
+      </div>
     </form>
-</mat-card>
-
-</div>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup" optional>
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel>Fill out your address</ng-template>
+      <mat-form-field>
+        <mat-label>Address</mat-label>
+        <input matInput formControlName="secondCtrl" placeholder="Ex. 1 Main St, New York, NY"
+               required>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Done</ng-template>
+    <p>You are now done.</p>
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button (click)="stepper.reset()">Reset</button>
+    </div>
+  </mat-step>
+</mat-horizontal-stepper>

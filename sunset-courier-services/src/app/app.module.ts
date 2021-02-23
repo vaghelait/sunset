@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
+import { NbStepComponent, NbStepperComponent, NbThemeModule } from '@nebular/theme';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -29,7 +30,7 @@ import { HomeComponent } from './home/home.component';
 import { ImageCarouselComponent } from './image-carousel/image-carousel.component';
 import { MobileMenuComponent } from './mobile-menu/mobile-menu.component';
 import { FaqsComponent } from './faqs/faqs.component';
-
+import {MatStepperModule} from '@angular/material/stepper'
 
 @NgModule({
   declarations: [
@@ -62,7 +63,9 @@ import { FaqsComponent } from './faqs/faqs.component';
     MatSidenavModule,
     MatCarouselModule,
     MatListModule,
-    ScrollToModule.forRoot()
+    MatStepperModule,
+    ScrollToModule.forRoot(),
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

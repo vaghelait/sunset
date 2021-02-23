@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, FormBuilder, Validators, FormsModule } from '@angular/forms';
 
+
 @Component({
   selector: 'app-quotation',
   templateUrl: './quotation.component.html',
@@ -21,6 +22,10 @@ export class QuotationComponent implements OnInit {
       name: ['', [Validators.required]],
       email: ['', [Validators.required,  Validators.email]],
       contact:[''],
+      pickupPostcode:['', [Validators.required]],
+      dropPostcode:['', [Validators.required]],
+      date:['', [Validators.required]],
+      time:['', [Validators.required]],
       enquiry:['', [Validators.required]]
     });
   }
@@ -38,6 +43,19 @@ export class QuotationComponent implements OnInit {
   get contact() {
     return this.quoteForm.get('contact');
   }
+  get time() {
+    return this.quoteForm.get('time');
+  }
+  get date() {
+    return this.quoteForm.get('date');
+  }
+  get dropPostcode() {
+    return this.quoteForm.get('dropPostcode');
+  }
+  get pickupPostcode() {
+    return this.quoteForm.get('pickupPostcode');
+  }
+
 
   onSubmit(): void {
     console.log(this.quoteForm.value);  

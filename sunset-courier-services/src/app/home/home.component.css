@@ -69,6 +69,13 @@ div:nth-of-type(odd) {
   margin-left: -1.2rem;
 }
 
+.quotes  {
+  background: url("/assets/images/carousel/parcel-delivery.jpg") no-repeat;
+  background-size: cover;
+  background-color: transparent!important;
+  /* linear-gradient(180deg, rgba(0,0,0,0.8) 20%, rgba(255,255,255,0.2) 100%) */
+}
+
 /* .quotes h1 { */
 /* margin-left:calc(1.2rem + 8.33%); */
 /* margin-right:8.33%;
