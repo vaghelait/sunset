@@ -6,8 +6,25 @@ label {
     width: 100%;
 }
 
+.half-width {
+    width: 50%;
+    display: block;
+}
+
+input {
+    width:50%;
+    float:left;
+}
+
+.help {
+    position: absolute;
+    width:50%;
+    color:#696969;
+    float:right;
+}
+
 button {
-    background-color: #f04b23;
+    background-color: #FFC20D;
     text-align: center;
     width:250px;
     margin: 15px auto;

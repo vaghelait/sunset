@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
-import { NbStepComponent, NbStepperComponent, NbThemeModule } from '@nebular/theme';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -11,7 +10,6 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
-import { AngularMyDatePickerModule } from 'angular-mydatepicker';
 
 import { FormsModule }   from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -30,7 +28,12 @@ import { HomeComponent } from './home/home.component';
 import { ImageCarouselComponent } from './image-carousel/image-carousel.component';
 import { MobileMenuComponent } from './mobile-menu/mobile-menu.component';
 import { FaqsComponent } from './faqs/faqs.component';
-import {MatStepperModule} from '@angular/material/stepper'
+import { MatStepperModule} from '@angular/material/stepper';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule} from '@angular/material/core';
+import { MatButtonToggleModule} from '@angular/material/button-toggle';
+
 
 @NgModule({
   declarations: [
@@ -54,17 +57,21 @@ import {MatStepperModule} from '@angular/material/stepper'
     MatToolbarModule,
     MatIconModule,
     MatCardModule,
-    AngularMyDatePickerModule,
     FormsModule,
     ReactiveFormsModule,
     MatInputModule,
     MatFormFieldModule,
+    MatRadioModule,
     FlexLayoutModule,
     MatSidenavModule,
     MatCarouselModule,
     MatListModule,
     MatStepperModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatButtonToggleModule,
     ScrollToModule.forRoot(),
+
     
   ],
   providers: [],

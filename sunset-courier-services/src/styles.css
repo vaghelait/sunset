@@ -60,8 +60,18 @@ button {
 mat-toolbar {
   z-index: 3;
 }
+/* 
+.mat-step-header .mat-step-icon-selected, .mat-step-header .mat-step-icon-state-done, .mat-step-header .mat-step-icon-state-edit {
+  background-color: rgba(240,75,35, 0.5)!important;
+} */
 
+/* .mat-step-header .mat-step-icon {
+  background-color: rgba(0,0,0,.40);
+} */
 
+.mat-step-header .mat-step-icon-selected, .mat-step-header .mat-step-icon-state-done, .mat-step-header .mat-step-icon-state-edit {
+  background-color: #FFC20D!important;
+}
 
 @media(max-width: 959px){
   .quote-button .mat-button-wrapper {

@@ -1,38 +1,118 @@
 
-
+<div class="quotes"><h1>Get a quote</h1>
 <mat-horizontal-stepper labelPosition="bottom" #stepper>
-  <mat-step [stepControl]="firstFormGroup">
-    <form [formGroup]="firstFormGroup">
-      <ng-template matStepLabel>Fill out your name</ng-template>
-      <mat-form-field>
-        <mat-label>Name</mat-label>
-        <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
-      </mat-form-field>
-      <div>
-        <button mat-button matStepperNext>Next</button>
-      </div>
+  <mat-step [stepControl]="locationDetailsFormGroup">
+    <form [formGroup]="quoteCategoryFormGroup">
+      <ng-template matStepLabel>QUOTE TYPE</ng-template>
+      <mat-form-field class="full-width">
+        <label id="example-radio-group-label">Select a quote type</label>
+        <!-- <mat-radio-group formControlName="refundType">
+
+          <mat-radio-button [value]="'partial-refund'" fxLayout="row">
+       
+               <mat-form-field appearance="standard" 
+                               (click)="selectPartialCheckbox()">
+       
+                    <mat-label>Partial Refund</mat-label>
+       
+                    <input matInput [placeholder]="'Amount to refund'" 
+                           formControlName="amount"/>
+               </mat-form-field>    
+          </mat-radio-button>        -->
+    </mat-form-field>
+
+    <div>
+      <button mat-button matStepperNext>Next</button>
+    </div>
     </form>
   </mat-step>
-  <mat-step [stepControl]="secondFormGroup" optional>
-    <form [formGroup]="secondFormGroup">
-      <ng-template matStepLabel>Fill out your address</ng-template>
-      <mat-form-field>
-        <mat-label>Address</mat-label>
-        <input matInput formControlName="secondCtrl" placeholder="Ex. 1 Main St, New York, NY"
-               required>
-      </mat-form-field>
+  <mat-step [stepControl]="locationDetailsFormGroup">
+    <form [formGroup]="locationDetailsFormGroup">
+      <ng-template matStepLabel>COLLECTION OR DELIVERY DETAILS</ng-template>
+      <mat-form-field class="full-width">
+        <mat-label>Pickup location postcode</mat-label>
+        <input matNativeControl formControlName="pickupPostcode" required>
+        <!-- <div class="half-width help">Please enter the postcode from where the collection is to take place.</div> -->
+    </mat-form-field>
+   
+    <!-- <div class="mat-error" *ngIf="pickupPostcode.touched && pickupPostcode.invalid">Please enter a valid postcode</div>          -->
+    <mat-form-field class="half-width">
+        <mat-label>Drop off location postcode</mat-label>
+        <input matNativeControl formControlName="dropPostcode" required>
+    </mat-form-field>
+    <!-- <div class="mat-error" *ngIf="dropPostcode.touched && dropPostcode.invalid">Please enter a valid postcode</div>  -->
+    <mat-form-field appearance="fill">
+      <mat-label>Choose a date</mat-label>
+      <input MatNativeDateModule matNativeControl [matDatepicker]="picker" formControlName="date">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <div>
+      <button mat-button matStepperNext>Next</button>
+    </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="productDetailsFormGroup">
+    <form [formGroup]="productDetailsFormGroup">
+      <ng-template matStepLabel>GOODS DETAILS</ng-template>
+      <mat-form-field class="half-width">
+        <mat-label>Description of goods</mat-label>
+        <textarea matNativeControl formControlName="productDescription"></textarea>
+    </mat-form-field>
+    <div>
+      <p><mat-label>Do the goods weigh under 1200kg?</mat-label></p>
+        <p>
+        <mat-button-toggle-group name="fontStyle" aria-label="Font Style" formControlName="weight">
+          <mat-button-toggle value="yes">Yes</mat-button-toggle>
+          <mat-button-toggle value="no">No</mat-button-toggle>
+        </mat-button-toggle-group>
+        </p>
+      </div>
       <div>
         <button mat-button matStepperPrevious>Back</button>
         <button mat-button matStepperNext>Next</button>
       </div>
     </form>
   </mat-step>
+  <mat-step [stepControl]="personalDetailsFormGroup">
+    <form [formGroup]="personalDetailsFormGroup">
+      <ng-template matStepLabel>Personal details</ng-template>     
+ 
+        <mat-form-field class="half-width">
+            <mat-label>Name</mat-label>
+            <input matNativeControl formControlName="name" required>
+        </mat-form-field>
+        <!-- <div class="mat-error" *ngIf="name.touched && name.invalid">Please enter a name</div>        -->
+        <mat-form-field class="half-width">
+            <mat-label>Contact number</mat-label>
+            <input matNativeControl formControlName="contact">
+        </mat-form-field>
+        <mat-form-field class="half-width">
+            <mat-label>Email</mat-label>
+            <input matNativeControl formControlName="email" placeholder="e.g. email@example.com">
+        </mat-form-field>
+        <!-- <div class="mat-error" *ngIf="email.touched && email.invalid">Please enter a valid email address</div>       -->
+        <div>
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
   <mat-step>
-    <ng-template matStepLabel>Done</ng-template>
+    <ng-template matStepLabel>ALL DONE</ng-template>
     <p>You are now done.</p>
     <div>
       <button mat-button matStepperPrevious>Back</button>
       <button mat-button (click)="stepper.reset()">Reset</button>
     </div>
   </mat-step>
+  
+<!-- Icon overrides. -->
+<ng-template matStepperIcon="phone">
+  <mat-icon>call_end</mat-icon>
+</ng-template>
+<ng-template matStepperIcon="chat">
+  <mat-icon>forum</mat-icon>
+</ng-template>
 </mat-horizontal-stepper>
+</div>
